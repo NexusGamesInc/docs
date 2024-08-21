@@ -1,0 +1,90 @@
+export const Targets = () => (
+  <div>
+    <ul>
+      <li>
+        – When a card or skill mentions a target, you must pick one or more
+        targets.
+      </li>
+      <li>– The target of a card or skill is affected by the card or skill.</li>
+      <li>– Targets can be:</li>
+      <li>
+        –-- <Tooltip tip="In any area.">Cards</Tooltip>
+      </li>
+      <li>–-- Biomes.</li>
+      <li>–-- Sectors.</li>
+      <li>–-- Players.</li>
+      <li>– Modifications need a target when played.</li>
+      <li>
+        – Valid targets for the card or skill requiring a target is stated on
+        the card.
+      </li>
+      <li>
+        –-- If you can't meet the targeting requirements, the target is invalid.
+      </li>
+      <li>
+        –-- When a card or skill in the queue executes, the validity of the
+        target is confirmed.
+      </li>
+      <li>–-- If the target is invalid, the card or skill can't affect it.</li>
+      <li>
+        –-- If there are no valid targets when a card or skill executes, it's
+        cancelled.
+      </li>
+      <li>– Cancelled cards go to the cache immediately.</li>
+      <li>– Cancelled skills have no effect.</li>
+    </ul>
+  </div>
+);
+
+export const TakingActions = () => (
+  <div>
+    <ul>
+      <li>– When takign an aciton it enters the queue.</li>
+      <li>– If the action:</li>
+      <li>–-- Has a target, pick the target.</li>
+      <li>–-- Says "Pick one-", you pick which option to use."</li>
+      <li>– If an action has X void energy in its cost:</li>
+      <li>–-- You pick what number of void energy X is.</li>
+      <li>–-- You pay the total energy cost, including the number for X.</li>
+    </ul>
+  </div>
+);
+
+export const AnsweringActions = () => (
+  <div>
+    <ul>
+      <li>
+        – Each player may answer actions added to the queue by adding a new
+        aciton to the queue.
+      </li>
+      <li>– Players can only answer if they are able to take an action.</li>
+      <li>– Players take turns, answering each other's actions.</li>
+      <li>– Players can answer their own action, if their opponent didn't.</li>
+    </ul>
+  </div>
+);
+
+export const ExecutingActions = () => (
+  <div>
+    <ul>
+      <li>
+        – When no player decides to take an action or answer an action in the
+        queue, the actions in the queue begin to execute.
+      </li>
+      <li>
+        – Actions in the queue are executed in sequence, starting with the last
+        action to enter the queue until all actions are executed.
+      </li>
+      <li>
+        – When an aciton in the queue executes, each player who can, may take
+        another action.
+      </li>
+      <li>
+        – If a player takes an aciton after another action executes, the process
+        repeats until the queue is empty.
+      </li>
+    </ul>
+  </div>
+);
+
+;

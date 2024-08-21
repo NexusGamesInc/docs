@@ -1,0 +1,27 @@
+export const KeywordPersistent = ({ keyword, oracle, description }) => (
+  <div>
+    <h1 className="text-blue-500">{keyword}</h1>
+    <p>{keyword} <i>{oracle}</i></p>
+    <br />
+    <p className="opacity-80">{description}</p>
+  </div>
+)
+
+export const KeywordReactive = ({ keyword, effect, oracle, description }) => (
+  <div>
+    <h1 className="text-amber-500">{keyword}</h1>
+    <p>{keyword}: {effect} <i>{oracle}</i></p>
+    <br />
+    <p className="opacity-80">{description}</p>
+  </div>
+)
+
+export const KeywordActive = ({ keyword, effect, oracle, description }) => (
+  <div>
+    <h1 className="text-fuscia-500">{keyword}</h1>
+    <p>{keyword}: {effect} <i>{oracle}</i></p>
+    <br />
+    <p className="opacity-80">{description}</p>
+  </div>
+
+)

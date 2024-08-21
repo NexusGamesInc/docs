@@ -1,0 +1,61 @@
+---
+title: "Card & Skill Speeds"
+sidebarTitle: "Speeds"
+description: "Speed determines when players can take actions"
+icon: "bolt"
+---
+
+import InlineIcon from "/snippets/inline-icon.mdx";
+
+In addition to costs, all Nexus cards _(except anomalies)_ have speeds that determines when it can be played or activated.
+Activated skills also have speeds. A card's speed is indicated by it’s number of speed symbol.
+
+<Card 
+  title="Speed Level 1"
+  icon={
+  <img
+    src="/images/icons/dark.svg"
+    alt="Speed level 1 icon"
+    width="24"
+    height="24"
+  />
+}>
+  Can **ONLY** be played or activated during each player's own turn.
+
+Can **ONLY** be played or activated during the primary phase.
+
+Can **NOT** be played or activated to answer any actions.
+
+</Card>
+
+<Card 
+  title="Speed Level 2"
+  icon={
+  <img
+    src="/images/icons/dark.svg"
+    alt="Speed level 2 icon"
+    width="24"
+    height="24"
+  />
+}>
+  Can **ONLY** be played or activated during the primary phase or battle phase.
+  
+  Can **ONLY** be played or activated to answer <InlineIcon name="speed1" /> or <InlineIcon name="speed2" /> actions.
+
+</Card>
+
+<Card 
+  title="Speed Level 3"
+  icon={
+  <img
+    src="/images/icons/dark.svg"
+    alt="Speed level 3 icon"
+    width="24"
+    height="24"
+  />
+}>
+  Can be played or activated at **ANY** time on **ANY** turn.
+  
+  Can be played or activated to answer actions of **ANY** speed.
+
+</Card>

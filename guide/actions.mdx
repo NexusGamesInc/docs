@@ -1,0 +1,50 @@
+---
+title: "Player Actions"
+sidebarTitle: "Actions"
+description: "Actions are the choices players can make"
+icon: "comment-exclamation"
+---
+
+import {
+  Targets,
+  TakingActions,
+  AnsweringActions,
+  ExecutingActions,
+} from "/snippets/actions.mdx";
+
+During each turn, players can take actions that affect the game.
+Players can take as many actions as they are able to and want during a turn.
+
+Actions that _do_ go in the queue:
+
+- Playing a card
+- Activating a skill
+- Advancing
+- Attacking
+- Defending
+
+Actions that _don't_ go in the queue:
+
+- Converting a card
+- Playing an anomaly
+
+<Note>
+  Reactive skills also go into the queue, letting players answer them with an
+  action.
+</Note>
+
+<Card title="Targets">
+  <Targets />
+</Card>
+
+<Card title="Taking Actions">
+  <TakingActions />
+</Card>
+
+<Card title="Answering Actions">
+  <AnsweringActions />
+</Card>
+
+<Card title="Executing Actions">
+  <ExecutingActions />
+</Card>

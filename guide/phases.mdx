@@ -1,0 +1,210 @@
+---
+title: "Turn Phases"
+sidebarTitle: "Phases"
+description: "Lorem ipsum"
+icon: "spinner-scale"
+---
+
+import { InlineIcon } from "/snippets/inline-icon.mdx";
+
+<Note>
+  The following turn order breakdown is explained from the perspective of the
+  active player. Some steps do not allower players to take any actions.
+</Note>
+
+<Steps>
+  <Step title="Phase 1: Start">
+    Players may answer your actions with **Speed 3** actions.
+
+    Opponents may take **Speed 3** actions if you took no action.
+
+    <Card title="Step 1: Refresh">
+      <Warning>Players can't take actions.</Warning>
+      Locked cards are unlocked.
+    </Card>
+    <Card title="Step 2: Draw">
+      Draw two cards, unless you're the starting player and its the first turn.
+      In which case, draw one card instead.
+    </Card>
+    <Card title="Step 3: Maintainence">
+      Any _"Start of the turn"_ reactive skills react.
+    </Card>
+
+  </Step>
+  <Step title="Phase 2: First primary">
+    You may take **Speed 1**, **Speed 2**, or **Speed 3** actions.
+    
+    Your opponent may take **Speed 2**, and **Speed 3** actions:
+      - To answer your actions.
+      - If you took no action.
+
+    You may:
+      - Convert a card if you haven't this turn.
+      - Play an anomaly if you haven't this turn.
+
+  </Step>
+  <Step title="Phase 3: Battle">
+    <Card title="Battle phase – Step 1: Advance">
+      <Info>Players don't have to advance.</Info>
+      -- Select any friendly agents that did not arrive this turn to advance with, for each one:
+        
+      -- -- Select which biome it advances into.
+
+      -- -- Select any unattached gear in the staging area to attach to advancing agents, for each: Attach the gear to target friendly agent in the staging area.
+
+      <Note>Players may take actions before agents advance.</Note>
+
+      -- You may take **Speed 2**, or **Speed 3** actions.
+
+      -- -- Your opponent may answer your actions.
+
+      -- Your opponent may take **Speed 2**, and **Speed 3** actions.
+
+      -- -- You may answer your opponents actions.
+
+      -- For each advancing agent, move it and its attachments to the friendly sector of the selected biome.
+
+      -- Your opponent may repeat this process to advance _(even if you don't advance)_.
+
+    </Card>
+    <Card title="Battle phase – Step 2: Attack">
+      <Info>Players don't have to attack, even if they advanced.</Info>
+      -- Any "Start of attack" reactive skills react.
+
+      -- Starting with you, players may answer with **Speed 3** actions.
+
+      <Note>Players may take actions **before** agents attack.</Note>
+
+      -- You may take **Speed 2**, or **Speed 3** actions.
+
+      -- -- Your opponents may answer your actions.
+
+      -- Your opponent may take **Speed 2**, or **Speed 3** actions.
+
+      -- -- You may answer your opponents actions.
+
+      -- You may have any agents you play arrive in a biome of your choice _(instead of in the staging area)_.
+
+      -- If the queue is empty, select any friendly agents that could attack that you want to attack with _(they are your attackers)_.
+
+      <Note>Players may take actions **after** agents attack.</Note>
+
+      -- Your opponent may take **Speed 2**, or **Speed 3** acitons.
+
+      -- -- You may answer your opponents actions.
+
+    </Card>
+    <Card title="Battle phase – Step 3: Defend">
+      <Info>Players don't have to defend.</Info>
+      -- Your oppoent may have any agents they play arrive in a biome of their choice.
+
+      <Note>Players may take actions **before** agents defend.</Note>
+
+      -- You may take **Speed 2**, or **Speed 3** actions.
+
+      -- -- Your opponent may answer your actions.
+
+      -- Your opponent may take **Speed 2**, or **Speed 3** actions.
+
+      -- -- You may answer your opponents actions.
+
+      -- Your opponent selects any agents that _could_ defend they want to defend with _(they are their defenders)_.
+
+      -- -- Each defender can only defend one attacker.
+
+      -- -- Each attacker can be defender by more than one defender.
+
+      -- -- The attacking player decides in what order the defenders take battle damage.
+
+      -- -- Locked agents can't defend.
+
+      <Note>Players may take actions **after** agents attack.</Note>
+
+      -- You may take **Speed 2**, or **Speed 3** actions.
+
+      -- -- Your opponent may answer your actions.
+
+      -- Your opponent may take **Speed 2**, or **Speed 3** actions.
+
+      -- -- You may answer your opponents actions.
+
+    </Card>
+    <Card title="Battle phase – Step 4: Damage">
+      <Warning>Players can't take actions.</Warning>
+      -- Undefended agents apply battle damage to the enemy sector in the biome they are attacking in.
+
+      -- -- If the damage is equal to or more than the attacked sector's durability, the attacked sector's owner loses the biome the sector is in.
+
+      -- If an attacking agent has multiple agents defending it:
+
+      -- -- The attacking player decideds how to assign the attacking agents damage.
+
+      -- -- Damage can only be assigned to the defending agents int he previously decided order.
+
+      -- -- Defending agents must be assigned terminal damage to be terminated before the next can be assigned damage.
+
+      <Info>**Terminal damage:** The amount of damage needed to terminate an agent. Typically, equal to the agents defense.</Info>
+
+      -- Battle damage is applied to:
+
+      -- -- Defending agents in order.
+
+      -- -- Attacking agents.
+
+      -- -- Attacked sector. It loses an amount of durability equal ot the damage.
+
+      -- Attacking and defending agents:
+
+      -- -- Apply battle damage to eac other.
+
+      -- -- Are terminated if they take battle damage equal to, or more, than their defense.
+
+      -- -- Damage applied to agents remain until the reset step.
+
+      -- All agents still in a biome retreat.
+    </Card>
+
+  </Step>
+  <Step title="Phase 4: Second primary">
+    You may take **Speed 1**, **Speed 2**, or **Speed 3** actions.
+    
+    Your opponent may take **Speed 2**, and **Speed 3** actions:
+      - To answer your actions.
+      - If you took no action.
+
+    You may:
+      - Convert a card if you haven't this turn.
+      - Play an anomaly if you haven't this turn.
+
+  </Step>
+  <Step title="Phase 5: End">
+    -- Any _"End of turn"_ reactive skills react.
+
+    -- -- Starting with you, players may answer with **Speed 3** actions.
+
+    -- Your may take **Speed 3** actions.
+
+    -- Your opponent may take **Speed 3** actions:
+
+    -- -- To answer your actions.
+
+    -- -- If you took no action.
+
+    <Card title="End phase – Step 1: End">
+      -- Players may answer your actions with **Speed 3** actions.
+
+      -- Opponents may take **Speed 3** actions if you took no action.
+    </Card>
+    <Card title="End phase – Step 2: Reset">
+      <Warning>Players can't take actions.</Warning>
+      -- Discard to your maximum hand size _(7 cards)_.
+
+      -- Damage is removed.
+
+      -- Temporary effects are removed.
+
+      -- The turn ends.
+    </Card>
+
+  </Step>
+</Steps>

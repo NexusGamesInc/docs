@@ -1,0 +1,144 @@
+export const Agent = () => (
+  <div>
+    <ul>
+      <li>– Agents fight for you during the battle phase.</li>
+      <li>- Agents arrive on the planet in the staging area.</li>
+      <li>- Agents advance into biomes at the start of the battle phase.</li>
+      <li>
+        - Agents retreat back into the staging area from the biomes at the end
+        of the battle phase.
+      </li>
+      <li>- Agents have either melee or ranged attack range.</li>
+      <li>- Ranged agents deal battle damage before melee agents.</li>
+      <li>- Ranged agents typically have less attack than melee agents.</li>
+      <li>
+        - A agent’s attack determines how much damage it deals in the battle
+        phase.
+      </li>
+      <li>
+        - An agent’s defense determines how much damage it takes to terminate
+        it.
+      </li>
+      <li>- Agents attack or defend during the battle phase of a turn.</li>
+      <li>- On the turn an agent arrives on the planet it cannot lock.</li>
+      <li>- Unlocked agents that just arrived on the planet can always:</li>
+      <li>--- Defend</li>
+      <li>--- Activate skills that don’t require locking.</li>
+      <li>- Some agents are also hardware or software.</li>
+      <li>- Agents typically have speed level I.</li>
+      <li>- Agents are constants.</li>
+    </ul>
+  </div>
+);
+
+export const Event = () => (
+  <div>
+    <ul>
+      <li>– Events typically introduce immediate effects to the game.</li>
+      <li>
+        - When an event is played, and executed, its effect is carried out
+        immediately.
+      </li>
+      <li>- After an event is executed it is put in the cache.</li>
+    </ul>
+  </div>
+);
+
+export const Software = () => (
+  <div>
+    <ul>
+      <li>– Software introduce persistent effects to the game.</li>
+      <li>- Software typically arrive on the planet in the staging area.</li>
+      <li>- When a software leaves the planet, its effect is removed.</li>
+      <li>- Some software have the modification subtype.</li>
+      <li>--- Modifications arrive attached to another constant.</li>
+      <li>
+        --- Modifications apply on ongoing effect tot he constant it's attached
+        to.
+      </li>
+      <li>
+        --- Modifications always specify what type of constant it can alter.
+      </li>
+      <li>
+        --- If the modified constant leaves the planet, the modification is
+        terminated.
+      </li>
+      <li>- Effect are constants.</li>
+    </ul>
+  </div>
+);
+
+export const Hardware = () => (
+  <div>
+    <ul>
+      <li>
+        – Hardwares often introduce ongoing effects to the game and/or have
+        activated skills.
+      </li>
+      <li>- Hardwares arrive on the planet in the staging area.</li>
+      <li>- Hardwares are typically void.</li>
+      <li>- Some hardware are also agents.</li>
+      <li>- Some hardware have the gear subtype.</li>
+      <li>
+        --- Like modifications, gear cards arrive attached to a friendly agent
+        when played.
+      </li>
+      <li>
+        --- Similarly, gear cards also apply ongoing effects to the agent it's
+        attached to.
+      </li>
+      <li>
+        -- But, unlike modifications, if a agent a gear is attached to leaves
+        the planet, the gear remains. If the agent was in a biome, the gear
+        remains in that biome. If the agents was in the staging area, the gear
+        remains in the staging area.
+      </li>
+      <li>
+        - Gear cards, not currently attached to an agent can be attached to an
+        agent when the Agents advances from the staging area to a biome.
+      </li>
+      <li>
+        -- If the unattached gear being attached is in a biome, the player
+        selects that biome, then selects the gear to attach it to the agent.
+      </li>
+      <li>
+        -- f both the unattached gear agent attached and the Agents is in the
+        staging area, the player selects a biome, then selects the gear to
+        attach it to the Agents, then move the agents with the gear attached to
+        the selected biome.
+      </li>
+      <li>-- Attaching an unattached gear to an agents is free.</li>
+      <li>
+        -- Attaching an unattached gear to an agents can only be done in the
+        battle phase, when selecting attackers or defenders.
+      </li>
+      <li>
+        -- Attaching an unattached gear to an agents, is considered an action
+        and has speed III.
+      </li>
+      <li>
+        -- Gear cards can also be attached to agents by cards, skills, or
+        effects that say to attach a gear to an agents.
+      </li>
+      <li>- Hardwares are constants.</li>
+    </ul>
+  </div>
+);
+
+export const Spawn = () => (
+  <div>
+    <ul>
+      <li>– Spawns are not cards.</li>
+      <li>- Spawns are spawned by other cards.</li>
+      <li>- Spawns represent constants.</li>
+      <li>- Spawns typically arrive on the planet in the staging area.</li>
+      <li>- Spawns are often agents, but they can be any kind of constant.</li>
+      <li>
+        - The spawn’s skills, stats, and so on are determined by the card which
+        created it.
+      </li>
+      <li>- The creator of the spawn is the owner of it.</li>
+      <li>- Spawns are constants.</li>
+    </ul>
+  </div>
+);

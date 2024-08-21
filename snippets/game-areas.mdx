@@ -1,0 +1,172 @@
+export const Deck = () => (
+  <div>
+    <ul>
+      <li>– The deck is where players draw cards from.</li>
+      <li>– Ech player has their own deck.</li>
+      <li>– Cards in decks are face-down:</li>
+      <li>–-- No player can look at them.</li>
+      <li>– Players may count the cards in each player's deck at any time.</li>
+      <li>– In most game formats, decks must have at least 45 cards.</li>
+      <li>– Each deck only have up to 3 copies of each card.</li>
+    </ul>
+  </div>
+);
+
+export const Hand = () => (
+  <div>
+    <ul>
+      <li>– The hand is where cards players can play are kept.</li>
+      <li>– Each player has their own hand.</li>
+      <li>
+        – When you draw a card, you put the top card of your deck into your
+        hand.
+      </li>
+      <li>– Only you can look at the cards in your hand.</li>
+      <li>
+        – At the beginning of the game, each player draws 6 cards, this is their
+        starting hand.
+      </li>
+      <li>
+        – 7 is the maximum number of cards you can have in your hand, your
+        maximum hand size.
+      </li>
+      <li>
+        – If you have more than 7 cards in hand at the end of your turn, you
+        have to discard cards until you have 7 cards in hand.
+      </li>
+    </ul>
+  </div>
+);
+
+export const Queue = () => (
+  <div>
+    <ul>
+      <li>– The queue is where player actions wait to be executed.</li>
+      <li>– The queue is not defined on the game board.</li>
+      <li>– The queue is shared by players.</li>
+      <li>– When a player takes an action it enters the queue.</li>
+      <li>– Player actions include playing cards and activating skills.</li>
+      <li>– Actions execute when no player decides to take an action.</li>
+      <li>– The last action to enter the queue executes first.</li>
+      <li>
+        – When an action executes, or cancels, players can take actions again.
+      </li>
+      <li>
+        –-- Some cards, skills, or effects can cancel actions in the queue. That
+        means, when it would be executed, it has no effect, and if it was a card
+        it is put into its owner's cache instead of anywhere else.
+      </li>
+    </ul>
+  </div>
+);
+
+export const Staging = () => (
+  <div>
+    <ul>
+      <li>
+        – Staging is where all{" "}
+        <Tooltip tip="Agents, Software, Hardware, and Anomalies are constants.">
+          constants
+        </Tooltip>{" "}
+        are placed.
+      </li>
+      <li>
+        – Constants are put in the staging area after executing from the queue.
+      </li>
+      <li>– Anomalies are put directly in the staging area.</li>
+      <li>– Cards in staging are visible to each player at all times.</li>
+      <li>– At the start of the game, staging is empty.</li>
+      <li>– Each player has their own staging.</li>
+    </ul>
+  </div>
+);
+
+export const Biomes = () => (
+  <div>
+    <ul>
+      <li>– Biomes are where agents battle.</li>
+      <li>
+        – Biomes are three separate sub-areas, collectively referred to as
+        biomes.
+      </li>
+      <li>
+        – Each biome has a unique effect, called Influence, which changes how
+        players battle in that biome.
+      </li>
+      <li>– Biomes are shared between players.</li>
+      <li>
+        –-- Each player has their own side of each biome, called a sector.
+      </li>
+      <li>
+        –-- Each player's sector in each biome has 10 starting durability.
+        Together each player's sectors have 30 starting durability.
+      </li>
+      <li>
+        –-- A sector's durability can be decreased or increased by damage or
+        effects.
+      </li>
+      <li>
+        –-- If a player's sector reaches 0 or less durability at any time, that
+        player loses the sector.
+      </li>
+      <li>
+        –-- When a player loses a sector, all agents in that sector retreat.
+      </li>
+      <li>
+        –-- When a player loses a sector, all unattached gear move to the
+        staging area.
+      </li>
+      <li>
+        –-- When a player loses 2 or more sectors, they immediately lose the
+        match.
+      </li>
+      <li>– Lost biomes are not part of the game.</li>
+      <li>–-- Players can never advance into a lost biome.</li>
+      <li>–-- Players can never put constants into a lost biome.</li>
+      <li>–-- The influence of lost biomes are removed.</li>
+    </ul>
+  </div>
+);
+
+export const Cache = () => (
+  <div>
+    <ul>
+      <li>– The cache is where used cards are kept (discard pile).</li>
+      <li>– Each player has their own cache.</li>
+      <li>– Cards in the cache are visible to each player at all times.</li>
+      <li>
+        – Player's may count the cards in each player's cache at any time.
+      </li>
+      <li>
+        – Event cards go to the cache immediately after executing from the
+        queue.
+      </li>
+      <li>– Cards go to the cache when:</li>
+      <li>–-- Discarded</li>
+      <li>–-- Terminated</li>
+      <li>–-- Forfeited</li>
+      <li>–-- Cancelled</li>
+    </ul>
+  </div>
+);
+
+export const Archive = () => (
+  <div>
+    <ul>
+      <li>
+        – The archive is where cards that are no longer part of the game are
+        kept.
+      </li>
+      <li>– Each player has their own archive.</li>
+      <li>
+        – Cards in the archive are typically visible to each player at all
+        times.
+      </li>
+      <li>
+        – Player's may count the cards in each player's archive at any time.
+      </li>
+      <li>– Cards go to archive if they are deleted.</li>
+      <li>– Cards in the archive are considered deleted.</li>
+    </ul>
+  </div>
+);

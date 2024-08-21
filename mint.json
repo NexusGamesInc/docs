@@ -1,13 +1,13 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Nexus Games Inc",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logo/nexus-dark.svg",
+    "light": "/logo/nexus-light.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
+    "primary": "#2dd4bf",
     "light": "#07C983",
     "dark": "#0D9373",
     "anchors": {
@@ -18,74 +18,177 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:support@play.nexus"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Website",
+    "url": "https://play.nexus"
   },
   "tabs": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
-  "anchors": [
+      "name": "Guide",
+      "url": "guide"
+    },
     {
       "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "url": "documentation"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "name": "Development",
+      "url": "development"
+    }
+  ],
+  "primaryTab": {
+    "name": "Quick-start"
+  },
+  "anchors": [
+    {
+      "name": "Website",
+      "icon": "globe",
+      "url": "https://play.nexus"
     },
     {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "name": "Discord",
+      "icon": "discord",
+      "url": "https://discord.gg/BZWVK4F6My"
+    },
+    {
+      "name": "Steam",
+      "icon": "gamepad-modern",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3279618215"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Play",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "quick-start/play/download",
+        "quick-start/play/playtest"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Create",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "quick-start/create/create",
+        "quick-start/create/design"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Learn",
       "pages": [
-        "api-reference/introduction"
+        "quick-start/learn/basics",
+        "quick-start/learn/tutorial"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Play Guide",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "guide/overview",
+        "guide/introduction"
+      ]
+    },
+    {
+      "group": "Resource System",
+      "pages": [
+        "guide/energy",
+        "guide/anomalies",
+        "guide/modes",
+        "guide/converting"
+      ]
+    },
+    {
+      "group": "Playing Cards",
+      "pages": [
+        "guide/speed",
+        "guide/locking"
+      ]
+    },
+    {
+      "group": "Game Elements",
+      "pages": [
+        "guide/layout",
+        "guide/types",
+        "guide/areas"
+      ]
+    },
+    {
+      "group": "Gameplay Loop",
+      "pages": [
+        "guide/actions",
+        "guide/turns",
+        "guide/phases"
+      ]
+    },
+    {
+      "group": "Strategic Goals",
+      "pages": [
+        "guide/planets",
+        "guide/biomes"
+      ]
+    },
+    {
+      "group": "Card Effects",
+      "pages": [
+        "guide/skills",
+        "guide/keywords",
+        "guide/markers"
+      ]
+    },
+    {
+      "group": "Start & End",
+      "pages": [
+        "guide/starting",
+        "guide/ending"
+      ]
+    },
+    {
+      "group": "References",
+      "pages": [
+        "documentation/glossary",
+        "documentation/keywords",
+        "documentation/influences"
+      ]
+    },
+    {
+      "group": "Game Lore",
+      "pages": [
+        "documentation/planets",
+        "documentation/agents"
+      ]
+    },
+    {
+      "group": "Development",
+      "pages": [
+        "development/roadmap",
+        "development/team"
+      ]
+    },
+    {
+      "group": "Get Involved",
+      "pages": [
+        "development/requests",
+        "development/contribute",
+        "development/support"
+      ]
+    },
+    {
+      "group": "Resources",
+      "pages": [
+        "development/q-and-a"
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "discord": "https://discord.gg/BZWVK4F6My",
+    "x": "https://twitter.com/PlayNexusTcg",
+    "github": "https://github.com/NexusTCG/nexus/wiki",
+    "linkedin": "https://www.linkedin.com/company/nexus-tcg",
+    "youtube": "https://www.youtube.com/@PlayNexusTCG"
+  },
+  "analytics": {
+    "posthog": {
+        "apiKey": "phc_i3z56h2JaDIVH1qsHin7Nx9pZUO8N1GJYUR0cYQbGk1"
+    }
   }
 }

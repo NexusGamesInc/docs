@@ -1,0 +1,49 @@
+---
+title: "Locking Cards"
+sidebarTitle: "Locking"
+description: "Lorem ipsum"
+icon: "lock"
+---
+
+import InlineIcon from "/snippets/inline-icon.mdx";
+
+Constants can be locked to create some outcome.
+Locking means a constant can't be used until the
+player’s next refresh step, unless unlocked.
+
+Locked cards are unlocked during each player's refresh step,
+becoming available to lock again.
+Anomalies are typically locked to make energy.
+
+Agents are typically locked to attack.
+All constants can have skills that require them to be
+locked as part of its activation cost.
+
+<CardGroup cols={2}>
+  <Card 
+    title="Lock"
+    icon={
+    <img
+      src="/images/icons/dark.svg"
+      alt="Lock symbol"
+      width="24"
+      height="24"
+    />
+  }>
+    The lock symbol indicates when you need to lock a constant.
+
+  </Card>
+  <Card 
+    title="Unlock"
+    icon={
+    <img
+      src="/images/icons/dark.svg"
+      alt="Unlock symbol"
+      width="24"
+      height="24"
+    />
+  }>
+    The unlock symbol indicates when you can unlock a constant.
+
+  </Card>
+</CardGroup>

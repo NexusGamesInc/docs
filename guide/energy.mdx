@@ -1,0 +1,131 @@
+---
+title: "Energy"
+sidebarTitle: "Energy"
+description: "The resource that powers the universe"
+icon: "battery-three-quarters"
+---
+
+import InlineIcon from "/snippets/inline-icon.mdx";
+
+### Energy Types
+
+Nexus cards cost energy to play.
+There are five types of energy.
+The energy cost is determined by the energy symbols in its cost.
+
+In addition to the five energy types there is also a generic energy type called Void.
+Void energy can be paid for by any of the other energies.
+The energy types and their symbols are:
+
+<CardGroup cols={3}>
+  <Card
+    title="Light energy"
+    icon={
+      <img
+        src="/images/icons/light.svg"
+        alt="Light Energy icon"
+        width="24"
+        height="24"
+      />
+    }
+  >
+    Made with Light anomalies.
+  </Card>
+  <Card
+    title="Storm energy"
+    icon={
+      <img
+        src="/images/icons/storm.svg"
+        alt="Storm Energy icon"
+        width="24"
+        height="24"
+      />
+    }
+  >
+    Made with Storm anomalies.
+  </Card>
+  <Card
+    title="Dark energy"
+    icon={
+      <img
+        src="/images/icons/dark.svg"
+        alt="Dark Energy icon"
+        width="24"
+        height="24"
+      />
+    }
+  >
+    Made with Dark anomalies.
+  </Card>
+  <Card
+    title="Chaos energy"
+    icon={
+      <img
+        src="/images/icons/chaos.svg"
+        alt="Chaos Energy icon"
+        width="24"
+        height="24"
+      />
+    }
+  >
+    Made with Chaos anomalies.
+  </Card>
+  <Card
+    title="Growth energy"
+    icon={
+      <img
+        src="/images/icons/growth.svg"
+        alt="Growth Energy icon"
+        width="24"
+        height="24"
+      />
+    }
+  >
+    Made with Growth anomalies.
+  </Card>
+  <Card
+    title="Void energy"
+    icon={
+      <img
+        src="/images/icons/light.svg"
+        alt="Void Energy icon"
+        width="24"
+        height="24"
+      />
+    }
+  >
+    Made with Void anomalies.
+  </Card>
+</CardGroup>
+
+### Energy Cost
+
+The amount of void energy needed to pay a cost is indicated by a
+number, between 0 and 15 , but can also be an undefined value.
+
+Undefined values are void energy values that the player decides they want it to be.
+Undefined values are indicated by a X void energy symbol.
+For example, X could be 2 or 5
+depending on what the player defines the values as.
+
+### Energy Value
+
+The energy value of a card is the total energy cost needed to pay for it.
+The initial energy value of a card is its original energy value.
+
+### Energy Store
+
+ou pay for costs with energy from your energy store.
+Energy in your energy store is available until spent, or the end of the current phase.
+
+### Making Energy
+
+To add energy to your energy store, you must make energy.
+Energy is made by certain skills, effects, and card types.
+Cards that can make energy must be locked to do so.
+Making energy always has speed 3.
+
+Typically only anomalies make energy, but other cards can sometimes make energy.
+Card that make energy, say something like:
+
+> _"Make <InlineIcon name="light" />."_
