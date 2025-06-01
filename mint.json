@@ -1,9 +1,9 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Nexus Games Inc",
+  "name": "Nullshapers",
   "logo": {
-    "dark": "/logo/nexus-dark.svg",
-    "light": "/logo/nexus-light.svg"
+    "dark": "/logo/nullshapers-logo-white.svg",
+    "light": "/logo/nullshapers-logo-black.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
@@ -23,7 +23,7 @@
   ],
   "topbarCtaButton": {
     "name": "Website",
-    "url": "https://play.nexus"
+    "url": "https://nullshapers.com"
   },
   "tabs": [
     {
@@ -46,7 +46,7 @@
     {
       "name": "Website",
       "icon": "globe",
-      "url": "https://play.nexus"
+      "url": "https://nullshapers.com"
     },
     {
       "name": "Discord",
@@ -181,10 +181,9 @@
   ],
   "footerSocials": {
     "discord": "https://discord.gg/BZWVK4F6My",
-    "x": "https://twitter.com/PlayNexusTcg",
-    "github": "https://github.com/NexusTCG/nexus/wiki",
-    "linkedin": "https://www.linkedin.com/company/nexus-tcg",
-    "youtube": "https://www.youtube.com/@PlayNexusTCG"
+    "x": "https://twitter.com/nullshapers",
+    "linkedin": "https://www.linkedin.com/company/nexus-games-inc",
+    "youtube": "https://www.youtube.com/@Nexus-Games-Inc"
   },
   "analytics": {
     "posthog": {
